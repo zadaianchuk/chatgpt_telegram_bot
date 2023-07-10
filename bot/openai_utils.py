@@ -184,7 +184,7 @@ class ChatGPT:
 
 
 async def transcribe_audio(audio_file):
-    r = await openai.Audio.atranscribe("whisper-1", audio_file)
+    r = await openai.Audio.atranscribe("whisper-1", audio_file, language="de")
     return r["text"]
 
 
